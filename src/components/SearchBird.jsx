@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import style from "./SearchBird.module.css";
 
 const SearchBird = ({ birds, setFilteredBirds }) => {
@@ -32,6 +33,9 @@ const SearchBird = ({ birds, setFilteredBirds }) => {
           />
         </div>
       </div>
+      <Link to={"favourites"}>
+        <button>Ver Favoritos</button>
+      </Link>
     </div>
   );
 };
