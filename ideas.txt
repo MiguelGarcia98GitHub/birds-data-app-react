@@ -1,0 +1,10 @@
+Primera parte:
+Listado de pajaros con nombre normal y rareza (segun la rareza, poner un numero de estrellas y de un color distinto dependiendo si son 1,2 o 3 estrellas)
+
+Segunda parte:
+Al clickar en el div de cada pajaro, que redirecciona a su propia subpagina con el nombre normal del pajaro en la url, con React router, y alli que muestre imagen, nombre normal, nombre cientifico, rareza y descripcion, tambien que tenga un boton  de volver atras al Listado
+
+Tercera parte: 
+Hacer arriba del listado (o por algun lado) un div que ponga "Tus pájaros favoritos", y se puedan agregar a favoritos uno a uno desde la lista de pajaros, o tambien desde la pagina individual de cada pajaro. Despues, en la pagina de favoritos, añadir opcion de quitar cualquier pajaro favorito.
+
+-------------------

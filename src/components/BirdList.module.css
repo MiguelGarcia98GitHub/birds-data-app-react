@@ -1,0 +1,61 @@
+.list_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: coral;
+  padding: 1.5rem 0.75rem 1rem 0.75rem;
+  align-items: center;
+}
+
+.name_container {
+  margin-left: 1rem;
+  text-align: center;
+}
+
+.scientific_container {
+  text-align: center;
+}
+
+.rarity_container {
+  text-align: center;
+}
+
+.link_container {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 330px;
+  padding: 0.25rem 0.5rem;
+}
+
+.link_container:hover {
+  filter: brightness(1.1);
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1060px) {
+  .list_container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .scientific_container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .list_container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rarity_container {
+    display: none;
+  }
+}
