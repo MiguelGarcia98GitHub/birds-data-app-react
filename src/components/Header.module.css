@@ -1,0 +1,45 @@
+.searchbox_container {
+  width: 100vw;
+  text-align: center;
+  background-color: rgb(104, 0, 139);
+  padding: 0.25rem 0rem 1rem 0rem;
+  color: white;
+  letter-spacing: 1px;
+  word-spacing: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbox_text_container {
+  margin: 0.5rem 0rem 0.25rem 0.25rem;
+}
+
+.searchbox_input {
+  border: 1px solid black;
+  max-width: 100px;
+  padding: 0 2px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.view_favourites_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view_favourites {
+  max-width: 40rem;
+  max-height: 4rem;
+  background-color: rgb(236, 109, 25);
+  color: aliceblue;
+  text-decoration: none;
+  padding: 0.5rem 1.8rem;
+  margin-top: 1rem;
+}
+
+.view_favourites:hover {
+  background-color: coral;
+}

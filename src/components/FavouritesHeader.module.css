@@ -1,0 +1,13 @@
+.favourites_header_container {
+  width: 100vw;
+  text-align: center;
+  background-color: rgb(104, 0, 139);
+}
+
+.favourites_header {
+  padding: 1rem;
+}
+
+.favourites_header_text {
+  color: antiquewhite;
+}

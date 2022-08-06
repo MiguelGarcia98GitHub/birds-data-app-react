@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import style from "./SearchBird.module.css";
+import style from "./Header.module.css";
 
-const SearchBird = ({ birds, setFilteredBirds }) => {
+const Header = ({ birds, setFilteredBirds }) => {
   const capitalizeFirstLetter = (str) => {
     const capitalized = str.charAt(0).toUpperCase() + str.slice(1);
     return capitalized;
@@ -33,11 +33,15 @@ const SearchBird = ({ birds, setFilteredBirds }) => {
           />
         </div>
       </div>
-      <Link to={"favourites"}>
-        <button>Ver Favoritos</button>
-      </Link>
+      <div className={style.view_favourites_container}>
+        <Link to={"favourites"} className={style.view_favourites}>
+          <div>
+            <h2>Ver Favoritos</h2>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };
 
-export default SearchBird;
+export default Header;

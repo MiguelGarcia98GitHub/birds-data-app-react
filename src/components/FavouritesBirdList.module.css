@@ -1,0 +1,58 @@
+.no_birds_container {
+  text-align: center;
+}
+
+.no_birds {
+  margin-top: 1rem;
+}
+
+.list_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: coral;
+  padding: 1.5rem 3rem 1rem 1rem;
+}
+
+.name_container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.scientific_container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.rarity_container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons_container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.button {
+  background-color: blueviolet;
+  padding: 0.5rem 0rem;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.button:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.line {
+  height: 1rem;
+  border: none;
+}

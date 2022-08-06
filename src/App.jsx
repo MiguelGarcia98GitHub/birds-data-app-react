@@ -4,8 +4,9 @@ import "./App.css";
 import Bird from "./components/Bird";
 import BirdList from "./components/BirdList";
 import FavouritesBirdList from "./components/FavouritesBirdList";
+import FavouritesHeader from "./components/FavouritesHeader";
 import Footer from "./components/Footer";
-import SearchBird from "./components/SearchBird";
+import Header from "./components/Header";
 import data from "./data/data";
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
             element={
               <>
                 {" "}
-                <SearchBird
+                <Header
                   setFilteredBirds={setFilteredBirds}
                   birds={currentData}
                 />
@@ -58,10 +59,13 @@ function App() {
           <Route
             path="/favourites"
             element={
-              <FavouritesBirdList
-                favouriteBirds={favouriteBirds}
-                setFavouriteBirds={setFavouriteBirds}
-              />
+              <>
+                <FavouritesHeader />
+                <FavouritesBirdList
+                  favouriteBirds={favouriteBirds}
+                  setFavouriteBirds={setFavouriteBirds}
+                />
+              </>
             }
           />
         </Routes>

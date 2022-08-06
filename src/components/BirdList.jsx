@@ -13,31 +13,43 @@ const BirdList = ({
 
   {
     if (filteredBirds.length === 0) {
-      return birds.map((bird) => {
+      return birds.map((birdie) => {
         return (
-          <div className={style.main} key={bird.id}>
+          <div className={style.main} key={birdie.id}>
             <div className={style.list_container}>
               <div className={style.name_container}>
-                <h2 className={style.name}>{bird.name}</h2>
+                <h2 className={style.name}>{birdie.name}</h2>
               </div>
               <div className={style.scientific_container}>
-                <h3 className={style.scientific}>
-                  Nombre científico: {bird.scientific}
-                </h3>
+                <h3 className={style.scientific}>{birdie.scientific}</h3>
               </div>
               <div className={style.rarity_container}>
-                <h4 className={style.rarity}>Rareza: {bird.rarity}</h4>
+                <h4 className={style.rarity}>Rareza: {birdie.rarity}</h4>
               </div>
-              <button
-                onClick={() => {
-                  setFavouriteBirds([...favouriteBirds, bird]);
-                }}
-              >
-                Añadir Favoritos
-              </button>
-              <Link to={`birds/${bird.name}`} className={style.link}>
-                <div className={style.link_container}>Ver información</div>
-              </Link>
+              <div className={style.buttons_container}>
+                <Link to={`birds/${birdie.name}`} className={style.button}>
+                  <div className={style.button_container}>Ver información</div>
+                </Link>
+                <hr className={style.line} />
+                <div
+                  className={style.button_container}
+                  onClick={() => {
+                    console.log(favouriteBirds);
+                    console.log(birdie);
+                    if (
+                      favouriteBirds.some(
+                        (currentBird) => currentBird.id === birdie.id
+                      )
+                    ) {
+                      return;
+                    }
+
+                    setFavouriteBirds([...favouriteBirds, birdie]);
+                  }}
+                >
+                  <div className={style.button}>Añadir Favorito</div>
+                </div>
+              </div>
             </div>
           </div>
         );
@@ -56,23 +68,35 @@ const BirdList = ({
                 <h2 className={style.name}>{filteredBird.name}</h2>
               </div>
               <div className={style.scientific_container}>
-                <h3 className={style.scientific}>
-                  Nombre científico: {filteredBird.scientific}
-                </h3>
+                <h3 className={style.scientific}>{filteredBird.scientific}</h3>
               </div>
               <div className={style.rarity_container}>
                 <h4 className={style.rarity}>Rareza: {filteredBird.rarity}</h4>
               </div>
-              <button
-                onClick={() => {
-                  setFavouriteBirds([...favouriteBirds, bird]);
-                }}
-              >
-                Añadir Favoritos
-              </button>
-              <Link to={`birds/${filteredBird.name}`} className={style.link}>
-                <div className={style.link_container}>Ver información</div>
-              </Link>
+              <div className={style.buttons_container}>
+                <Link
+                  to={`birds/${filteredBird.name}`}
+                  className={style.button}
+                >
+                  <div className={style.button_container}>Ver información</div>
+                </Link>
+                <hr className={style.line} />
+                <div
+                  className={style.button}
+                  onClick={() => {
+                    if (
+                      favouriteBirds.some(
+                        (currentBird) => currentBird.id === filteredBird.id
+                      )
+                    ) {
+                      return;
+                    }
+                    setFavouriteBirds([...favouriteBirds, filteredBird]);
+                  }}
+                >
+                  <div className={style.button_text}>Añadir Favorito</div>
+                </div>
+              </div>
             </div>
           </div>
         );
