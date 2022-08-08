@@ -1,15 +1,15 @@
 .searchbox_container {
-  width: 100vw;
-  text-align: center;
+  align-items: center;
   background-color: rgb(104, 0, 139);
-  padding: 0.25rem 0rem 1rem 0rem;
   color: white;
-  letter-spacing: 1px;
-  word-spacing: 0.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  align-items: center;
+  letter-spacing: 1px;
+  padding: 0.25rem 0rem 1rem 0rem;
+  text-align: center;
+  width: 100vw;
+  word-spacing: 0.5rem;
 }
 
 .searchbox_text_container {
@@ -18,28 +18,28 @@
 
 .searchbox_input {
   border: 1px solid black;
+  font-size: 1rem;
   max-width: 100px;
   padding: 0 2px;
   text-align: center;
-  font-size: 1rem;
 }
 
 .view_favourites_container {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 
 .view_favourites {
-  max-width: 40rem;
-  max-height: 4rem;
-  background-color: rgb(236, 109, 25);
+  background-color: darkorange;
   color: aliceblue;
-  text-decoration: none;
-  padding: 0.5rem 1.8rem;
   margin-top: 1rem;
+  max-height: 4rem;
+  max-width: 40rem;
+  padding: 0.5rem 1.8rem;
+  text-decoration: none;
 }
 
 .view_favourites:hover {
-  background-color: coral;
+  filter: brightness(1.3);
 }

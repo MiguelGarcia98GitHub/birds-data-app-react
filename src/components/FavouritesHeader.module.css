@@ -1,7 +1,7 @@
 .favourites_header_container {
-  width: 100vw;
-  text-align: center;
   background-color: rgb(104, 0, 139);
+  text-align: center;
+  width: 100vw;
 }
 
 .favourites_header {

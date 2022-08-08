@@ -7,52 +7,52 @@
 }
 
 .list_container {
+  background-color: darkorange;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  background-color: coral;
   padding: 1.5rem 3rem 1rem 1rem;
 }
 
 .name_container {
-  display: flex;
-  text-align: center;
   align-items: center;
+  display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .scientific_container {
-  display: flex;
-  text-align: center;
   align-items: center;
+  display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .rarity_container {
-  display: flex;
-  text-align: center;
   align-items: center;
+  display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .buttons_container {
   display: flex;
-  text-align: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .button {
   background-color: blueviolet;
-  padding: 0.5rem 0rem;
   color: aliceblue;
+  padding: 0.5rem 0rem;
   text-decoration: none;
 }
 
 .button:hover {
-  filter: brightness(1.1);
   cursor: pointer;
+  filter: brightness(1.1);
 }
 
 .line {
-  height: 1rem;
   border: none;
+  height: 1rem;
 }
